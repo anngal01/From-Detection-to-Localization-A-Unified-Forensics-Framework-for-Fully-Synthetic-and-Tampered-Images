@@ -1,0 +1,25 @@
+# Versions below are the lower bounds the code needs. For the exact environment
+# used to produce the paper's results (linux-64, Python 3.14, CUDA 13.0), see
+# environment.yml instead.
+
+# Core
+torch>=2.0
+torchvision>=0.15
+timm>=0.9.12          # provides the frozen DINOv2 backbones (vit_*_patch14_dinov2)
+
+# Data
+datasets>=2.14        # Hugging Face datasets, incl. streaming mode
+numpy>=1.24
+Pillow>=9.5
+opencv-python>=4.8    # cv2: mask / overlay writing
+
+# Metrics and logging
+scikit-learn>=1.3
+tqdm>=4.65
+wandb>=0.16           # optional at runtime: logging is disabled unless WANDB_MODE=online
+
+# Optional extras
+# fvcore              # only for test_files/test_efficiency.py (FLOP counting)
+# clip @ git+https://github.com/openai/CLIP.git
+#                     # only for the legacy CLIP ViT-L/14 backbone in src/models.py;
+#                     # the DINOv2 pipeline does not need it.

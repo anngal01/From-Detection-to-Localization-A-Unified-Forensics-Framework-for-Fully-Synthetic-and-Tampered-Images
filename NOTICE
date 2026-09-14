@@ -1,0 +1,37 @@
+From Detection to Localization: A Unified Forensics Framework for Fully
+Synthetic and Tampered Images
+Copyright (c) 2026 Annalisa Gallina
+
+This product includes software developed as part of the RINE project:
+
+    RINE - "Leveraging Representations from Intermediate Encoder-blocks for
+    Synthetic Image Detection", Koutlis et al.
+    https://github.com/mever-team/rine
+    Copyright (c) MeVer team, CERTH-ITI
+    Licensed under the Apache License, Version 2.0
+
+Portions of the following files are derived from that repository and remain
+subject to the Apache License, Version 2.0:
+
+    src/models.py             Hook, Model, and the RINE projection/TIE head
+    src/utils_detection.py    training loop, transforms, SupConLoss
+    src/utils_localization.py transforms, augmentation, checkpoint loading
+
+Changes made with respect to the original RINE implementation include:
+replacing the frozen CLIP:ViT-L/14 backbone with DINOv2, extending the
+classification head from binary to three-class output, adding a DPT-style
+segmentation branch over the backbone's patch tokens, and restructuring data
+loading, configuration and logging.
+
+You may obtain a copy of the Apache License, Version 2.0 at:
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+License for the specific language governing permissions and limitations under
+the License.
+
+All other original work in this repository is released under the MIT License;
+see the LICENSE file.

@@ -1,0 +1,43 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.venv/
+venv/
+env/
+.python-version
+
+# Model checkpoints and weights
+ckpt/
+checkpoints/
+*.pth
+*.pt
+*.safetensors
+
+# Datasets and downloaded data
+data/
+datasets/
+so_fake_set_validation/
+*.parquet
+
+# Experiment / inference outputs
+demo/
+outputs/
+output/
+viz_output/
+failure_cases*/
+found_imgs/
+found_images/
+results/
+wandb/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
