@@ -69,7 +69,7 @@ Three loading modes are available:
 | `local` | Reads from `DATA_ROOT` on disk. |
 
 
-
+<!--
 ---
 
 ## Configuration
@@ -87,7 +87,7 @@ filesystem from the code.
 | `WANDB_ENTITY` | logged-in user | W&B destination override |
 | `WANDB_PROJECT` | `forensics-framework` | W&B project override |
 
-
+-->
 ---
 
 ## Training
